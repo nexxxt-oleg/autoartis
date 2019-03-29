@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <title>Авто</title>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/stylesheet.css">
+    <link rel="stylesheet" href="/css/main.css">
+
+
+</head>
+
+<body>
+
+<header class="header">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <aside class="header__top-line d-flex">
+                    <div class="dropdown">
+                        <button class="btn btn-dropdown dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown">
+                            Выбрать филиал
+                        </button>
+                        <div class="dropdown-menu dropdown-menu--filial" aria-labelledby="dropdownMenuButton">
+                            <ul class="list-filial">
+                                <li>
+                                    <label><input type="radio" name="filial" value="1" /><span>г. Москва,  ВДНХ, ул. Докунина 10</span></label>
+                                </li>
+                                <li>
+                                    <label><input type="radio" name="filial" value="2" /><span>г. Москва, м. Калужская, Старокалужское шоссе 65</span></label>
+                                </li>
+                                <li>
+                                    <label><input type="radio" name="filial" value="3" checked="" /><span>г. Воронеж, ул.Пеше-Стрелецкая д.78</span></label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="ml-auto col-top-line"><i class="ico-circle ico-circle--adr"></i> <span id="adrSelect">г. Воронеж, ул.Пеше-Стрелецкая д.78</span></div>
+                    <div class="col-top-line"><i class="ico-circle ico-circle--email"></i>e-mail: <a href="mailto:vrn@autoartis.ru">vrn@autoartis.ru</a></div>
+                    <div class="col-top-line"><i class="ico-circle ico-circle--phone"></i><a href="tel:+74732306620">+7 (473) 230-66-20</a></div>
+                </aside>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-8 col-12 d-flex col-header-logo">
+                <a href="/" class="header__logo">
+                    <img src="/img/logo.png" alt="">
+                </a>
+                <form class="form-inline ml-auto search-vin">
+                    <input class="form-control" type="text" placeholder="Поиск по VIN" />
+                    <button class="btn  btn-blu" type="submit">Найти</button>
+                </form>
+            </div>
+            <div class="col-lg-4 col-12 row">
+                <div class="col-6">
+                    <a href="" class="header__basket">
+                        <span class="header__basket__col">8</span>
+                        Сумма
+                        <span class="header__basket__price">39 690 руб.</span>
+                    </a>
+                </div>
+                <div class="col-6">
+                    <div class="header__registration">
+                        <a href="" class="enter">Вход</a>
+                        <a href="" class="registration">Регистрация</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <aside class="header__nav">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg ">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTop">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarTop">
+                    <ul class="navbar-nav w-100">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/">Главная</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/company.html">о компании </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/catalog.html">каталог</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/repair.html">Ремонт</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/bay.html">Оплата и доставка</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/news.html">новости</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/contacts.html">Контакты</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </nav>
+        </div>
+    </aside>
+</header>
+
+<section class="container page-inner text fpad100">
+    <div class="row">
+        <div class="col-12">
+            <h1 class="h1">Редактирование профиля</h1>
+        </div>
+    </div>
+    <form>
+        <aside class="informer-basket informer-basket--profile">
+           <div class="card">
+               <div class="card-header">
+                    <span>Заполните, пожалуйста, Вашу контактную информацию. Поля для заполнения являются обязательными</span>
+               </div>
+                <div class="card-body">
+                    <ul class="card-body__list">
+                        <li>
+                            <div class="row profil-box justify-content-between">
+                                <div class="col profil-box__inner">
+                                    <label for="email">Email:</label>
+                                    <input name="email" id="email" type="text" class="form-control">
+                                </div>
+                                <div class="col profil-box__inner">
+                                    <label for="pas">Пароль:</label>
+                                    <input name="pas" id="pas" type="password" class="form-control">
+                                </div>
+                                <div class="col profil-box__inner">
+                                    <label for="status">Юридический статус:</label>
+                                    <select name="status" id="status" class="form-control">
+                                        <option>Физ. лицо</option>
+                                        <option>Юр. лицо</option>
+                                    </select>
+                                </div>
+                                <div class="col profil-box__inner">
+                                    <label for="name">Имя:</label>
+                                    <input name="name" id="name" type="text" class="form-control">
+                                </div>
+                                <div class="col profil-box__inner">
+                                    <label for="surname">Фамилия:</label>
+                                    <input name="surname" id="surname" type="text" class="form-control">
+                                </div>
+                                <div class="col profil-box__inner">
+                                    <label for="patronymic">Отчество:</label>
+                                    <input name="patronymic" id="patronymic" type="text" class="form-control">
+                                </div>
+                                <div class="col profil-box__inner">
+                                    <label for="phone">Телефон:</label>
+                                    <input name="phone" id="phone" type="text" class="form-control">
+                                </div>
+                                <div class="col profil-box__inner">
+                                    <label for="region">Регион:</label>
+                                    <select name="region" id="region" class="form-control">
+                                        <option>Медведев</option>
+                                        <option>Медведев</option>
+                                    </select>
+                                </div>
+                                <div class="col profil-box__inner">
+                                    <label for="delivery">Выбор достаки:</label>
+                                    <select name="delivery" id="delivery" class="form-control">
+                                        <option>Самовывоз</option>
+                                        <option>Самовывоз</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="d-flex informer-basket__footer">
+                                <label class="chek-wrap">
+                                    <input type="checkbox" class="chek" checked>
+                                    <span>
+                                        При нажатии кнопки "Заказать", Я подтверждаю что ознакомился с Условиями продажи товаров для
+                                        физических лиц интернет-магазина autoartis.ru и принимаю их (при согласии поставьте галочку)
+                                    </span>
+                                </label>
+                                <div class="ml-auto informer-basket__submit">
+                                    <button class="btn btn-blu btn-block">Сохранить</button>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </aside>
+    </form>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-4 col-lg-3 footer__col-logo">
+                <a href="/" class="footer__logo">
+                    <img src="/img/logo.png" alt="">
+                </a>
+                <div class="payment">
+                    <span>принимаем к оплате:</span>
+                    <img src="../img/pay.png" alt="">
+                </div>
+            </div>
+            <div class="col-xl-2 col-lg-3 footer__col-nav">
+                <nav class="footer__nav">
+                    <ul class="nav">
+                        <li>
+                            <a href="">Главная</a>
+                        </li>
+                        <li>
+                            <a href="">о компании</a>
+                        </li>
+                        <li>
+                            <a href="">каталог</a>
+                        </li>
+                        <li>
+                            <a href="">Ремонт</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="col-xl-3 col-lg-3 footer__col-nav">
+                <nav class="footer__nav">
+                    <ul class="nav">
+                        <li>
+                            <a href="">Оплата и доставка</a>
+                        </li>
+                        <li>
+                            <a href="">Вакансии</a>
+                        </li>
+                        <li>
+                            <a href="">новости</a>
+                        </li>
+                        <li>
+                            <a href="">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="col-xl-3 col-lg-3 footer__contact">
+                <div class="col-top-line"><i class="ico-circle ico-circle--email"></i><a href="mailto:vrn@autoartis.ru">vrn@autoartis.ru</a></div>
+                <div class="col-top-line"><i class="ico-circle ico-circle--phone"></i><a href="tel:+74732306620">+7 (473) 230-66-20</a></div>
+                <div class="col-top-line"><i class="ico-circle ico-circle--adr"></i> <span id="adrSelect2">г. Воронеж, ул.Пеше-Стрелецкая д.78</span></div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="//code.jquery.com/jquery-3.3.1.min.js?ver=5.0.3"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="/js/bootstrap.min.js"></script>
+
+</body>
